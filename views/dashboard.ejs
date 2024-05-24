@@ -1,0 +1,963 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Analytics Dashboard </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="This is an example dashboard created using build-in elements and components.">
+  
+<link href="/main.css" rel="stylesheet"></head>
+<body>
+    <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+        <div class="app-header header-shadow">
+            <div class="app-header__logo">
+                <div class="logo-src"></div>
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <!-- <div class="app-header__menu">
+                <span>
+                    <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+            </div>     -->
+            <div class="app-header__content">
+                <div class="app-header-left">
+                    <div class="search-wrapper">
+                        <!-- <div class="input-holder">
+                            <input type="text" class="search-input" placeholder="Type to search">
+                            <button class="search-icon"><span></span></button>
+                        </div> -->
+                        <button class="close"></button>
+                    </div>
+                    <ul class="header-menu nav">
+                        <li class="dropdown nav-item">
+                            <a href="/profile" class="nav-link">
+                                <i class="nav-link-icon fa pe-7s-user"></i>
+                               Profile
+                            </a>
+                        </li>
+                    </ul>       </div>
+                <!-- <div class="app-header-right">
+                    <div class="header-btn-lg pr-0">
+                        <div class="widget-content p-0">
+                            <div class="widget-content-wrapper">
+                                <div class="widget-content-left">
+                                    <div class="btn-group">
+                                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                            <img width="42" class="rounded-circle" src="assets/images/avatars/profile.png" alt="">
+                                            <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                                        </a>
+                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                            <button type="button" tabindex="0" class="dropdown-item">User Account</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Settings</button>
+                                            <h6 tabindex="-1" class="dropdown-header">Header</h6>
+                                            <button type="button" tabindex="0" class="dropdown-item">Actions</button>
+                                            <div tabindex="-1" class="dropdown-divider"></div>
+                                            <button type="button" tabindex="0" class="dropdown-item">Dividers</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>        </div> -->
+            </div>
+        </div>        <div class="ui-theme-settings">
+            <div class="theme-settings__inner">
+                <div class="scrollbar-container">
+                    <div class="theme-settings__options-wrapper">
+                        <h3 class="themeoptions-heading">Layout Options
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-header">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Header
+                                                </div>
+                                                <div class="widget-subheading">Makes the header top fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-sidebar">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Sidebar
+                                                </div>
+                                                <div class="widget-subheading">Makes the sidebar left fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-footer">
+                                                    <div class="switch-animate switch-off">
+                                                        <input type="checkbox" data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Footer
+                                                </div>
+                                                <div class="widget-subheading">Makes the app footer bottom fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Page Section Tabs
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div role="group" class="mt-2 btn-group">
+                                            <button type="button" class="btn-wide btn-shadow btn-primary btn btn-secondary switch-theme-class" data-class="body-tabs-line">
+                                                Line
+                                            </button>
+                                            <button type="button" class="btn-wide btn-shadow btn-primary active btn btn-secondary switch-theme-class" data-class="body-tabs-shadow">
+                                                Shadow
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        <div class="app-main">
+                <div class="app-sidebar sidebar-shadow">
+                    <div class="app-header__logo">
+                        <div class="logo-src"></div>
+                        <div class="header__pane ml-auto">
+                            <div>
+                                <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                                    <span class="hamburger-box">
+                                        <span class="hamburger-inner"></span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-header__mobile-menu">
+                        <div>
+                            <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="app-header__menu">
+                        <span>
+                            <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                                <span class="btn-icon-wrapper">
+                                    <i class="fa fa-ellipsis-v fa-w-6"></i>
+                                </span>
+                            </button>
+                        </span>
+                    </div>    <div class="scrollbar-sidebar" >
+                        <div class="app-sidebar__inner">
+                            <ul class="vertical-nav-menu">
+                                <li class="app-sidebar__heading">Home</li>
+                                <li>
+                                    <a href="/" class="mm-active">
+                                        <i class="metismenu-icon pe-7s-wallet"></i>
+                                        Wallet
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Software</li>
+                                <li  >
+                                    <a href="/buy-software">
+                                        <i class="metismenu-icon pe-7s-cart"></i>
+                                        Purchase software
+                                    </a>
+                                </li>
+                              
+                                <li class="app-sidebar__heading">Withdraw</li>
+                                <li>
+                                    <a href="/withdrawal">
+                                        <i class="metismenu-icon pe-7s-culture"></i>
+                                        Withdraw funds
+                                    </a>
+                                </li>                           
+                                <li class="app-sidebar__heading">Profile</li>
+                                <li>
+                                    <a href="/profile">
+                                        <i class="metismenu-icon pe-7s-user">
+                                        </i>User detials
+                                    </a>
+                                </li>
+                               
+                                
+                                <li class="app-sidebar__heading">Log Out</li>
+                                <li>
+                                    <a href="/users/logout">
+                                        <i class="metismenu-icon pe-7s-right-arrow">
+                                        </i>Log out
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> <div class="app-main__outer">
+                    <div class="app-main__inner">
+                        <div class="app-page-title">
+                            <div class="page-title-wrapper">
+                                <div class="page-title-heading">
+                                    <div class="page-title-icon">
+                                        <i class="pe-7s-car icon-gradient bg-mean-fruit">
+                                        </i>
+                                    </div>
+                                    <div>
+                                        <div class="page-title-subheading"> 
+                                            Equty Value(BTC)
+                                        </div>
+                                         0.00 ~ $ 00.00
+                                    </div>
+                                </div>
+                                <div class="page-title-actions">
+                                    <!-- <button type="button" data-toggle="tooltip" title="Example Tooltip" data-placement="bottom" class="btn-shadow mr-3 btn btn-dark">
+                                        <i class="fa fa-star"></i>
+                                    </button> -->
+                                    <div class="d-inline-block dropdown">
+                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                            <ul class="nav flex-column">
+                                                <li class="nav-item">
+                                                    <a href="javascript:void(0);" class="nav-link">
+                                                        <i class="nav-link-icon lnr-inbox"></i>
+                                                        <span>
+                                                            Inbox
+                                                        </span>
+                                                        <div class="ml-auto badge badge-pill badge-secondary">86</div>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="javascript:void(0);" class="nav-link">
+                                                        <i class="nav-link-icon lnr-book"></i>
+                                                        <span>
+                                                            Book
+                                                        </span>
+                                                        <div class="ml-auto badge badge-pill badge-danger">5</div>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="javascript:void(0);" class="nav-link">
+                                                        <i class="nav-link-icon lnr-picture"></i>
+                                                        <span>
+                                                            Picture
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a disabled href="javascript:void(0);" class="nav-link disabled">
+                                                        <i class="nav-link-icon lnr-file-empty"></i>
+                                                        <span>
+                                                            File Disabled
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>   </div> 
+                        </div>            <div class="row">
+                            <div class="col-md-6 col-xl-4">
+                                <div class="card mb-3 widget-content bg-white">
+                                    <div class="widget-content-wrapper text-dark">
+                                        <div class="widget-content-left mr-3">
+                                            <img class="mx-auto d-block rounded-circle padding-left"   height="45" width="45" src="https://assets.trustwalletapp.com/blockchains/bitcoin/info/logo.png" alt="bitcoin icon">
+                                        </div>
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Bitcoin </div>
+                                            <div class="widget-subheading">$00,00</div>
+                                        </div>
+                                        <div class="widget-content-right">                 <div class="widget-numbers text-dark"><span>0 BTC</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-4">
+                                <div class="card mb-3 widget-content bg-white">
+                                    <div class="widget-content-wrapper text-dark">
+                                        <div class="widget-content-left mr-3">
+                                            <img class="mx-auto d-block rounded-circle padding-left"   height="45" width="45" src="https://assets.trustwalletapp.com/blockchains/ethereum/info/logo.png" alt="bitcoin icon">
+                                        </div>
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Ethereum </div>
+                                            <div class="widget-subheading">$00,00</div>
+                                        </div>
+                                        <div class="widget-content-right">                 <div class="widget-numbers text-dark"><span>0 ETH</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-4">
+                                <div class="card mb-3 widget-content bg-white">
+                                    <div class="widget-content-wrapper text-dark">
+                                        <div class="widget-content-left mr-3">
+                                            <img class="mx-auto d-block rounded-circle padding-left"   height="45" width="45" src="https://assets.trustwalletapp.com/blockchains/binance/info/logo.png" alt="bitcoin icon">
+                                        </div>
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Binance </div>
+                                            <div class="widget-subheading">$00,00</div>
+                                        </div>
+                                        <div class="widget-content-right">
+                                            <div class="widget-numbers text-dark"><span> 0 BNB</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-xl-none d-lg-block col-md-6 col-xl-4">
+                                <div class="card mb-3 widget-content bg-white">
+                                    <div class="widget-content-wrapper text-dark">
+                                        <div class="widget-content-left mr-3">
+                                            <img class="mx-auto d-block rounded-circle padding-left"   height="45" width="45" src="https://assets.trustwalletapp.com/blockchains/litecoin/info/logo.png" alt="bitcoin icon">
+                                        </div>
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Litecoin </div>
+                                            <div class="widget-subheading">$00,00</div>
+                                        </div>
+                                        <div class="widget-content-right">                 <div class="widget-numbers text-dark"><span>0 LTC</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-4">
+                                <div class="card mb-3 widget-content bg-white">
+                                    <div class="widget-content-wrapper text-dark">
+                                        <div class="widget-content-left mr-3">
+                                            <img class="mx-auto d-block rounded-circle padding-left"   height="45" width="45" src="https://assets.trustwalletapp.com/blockchains/ripple/info/logo.png" alt="bitcoin icon">
+                                        </div>
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Ripple </div>
+                                            <div class="widget-subheading">$00,00</div>
+                                        </div>
+                                        <div class="widget-content-right">                 <div class="widget-numbers text-dark"><span>0 XRP</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-4">
+                                <div class="card mb-3 widget-content bg-white">
+                                    <div class="widget-content-wrapper text-dark">
+                                        <div class="widget-content-left mr-3">
+                                            <img class="mx-auto d-block rounded-circle padding-left"   height="45" width="45" src="https://assets.trustwalletapp.com/blockchains/polkadot/info/logo.png" alt="bitcoin icon">
+                                        </div>
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Polkadot </div>
+                                            <div class="widget-subheading">$00,00</div>
+                                        </div>
+                                        <div class="widget-content-right">                 <div class="widget-numbers text-dark"><span>0 DOT</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-4">
+                                <div class="card mb-3 widget-content bg-white">
+                                    <div class="widget-content-wrapper text-dark">
+                                        <div class="widget-content-left mr-3">
+                                            <img class="mx-auto d-block rounded-circle padding-left"   height="45" width="45" src="https://assets.trustwalletapp.com/blockchains/stellar/info/logo.png" alt="bitcoin icon">
+                                        </div>
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Stellar</div>
+                                            <div class="widget-subheading">$00,00</div>
+                                        </div>
+                                        <div class="widget-content-right">
+                                            <div class="widget-numbers text-dark"><span>0 XLM </span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-xl-none d-lg-block col-md-6 col-xl-4">
+                                <div class="card mb-3 widget-content bg-white">
+                                    <div class="widget-content-wrapper text-dark">
+                                        <div class="widget-content-left mr-3">
+                                            <img class="mx-auto d-block rounded-circle padding-left"   height="45" width="45" src="https://assets.trustwalletapp.com/blockchains/doge/info/logo.png" alt="bitcoin icon">
+                                        </div>
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Dogecoin </div>
+                                            <div class="widget-subheading">$00,00</div>
+                                        </div>
+                                        <div class="widget-content-right">                 <div class="widget-numbers text-dark"><span>0 DOGE</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-4">
+                                <div class="card mb-3 widget-content bg-white">
+                                    <div class="widget-content-wrapper text-dark">
+                                        <div class="widget-content-left mr-3">
+                                            <img class="mx-auto d-block rounded-circle padding-left"   height="45" width="45" src="https://assets.trustwalletapp.com/blockchains/zcash/info/logo.png" alt="bitcoin icon">
+                                        </div>
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Zcash </div>
+                                            <div class="widget-subheading">$00,00</div>
+                                        </div>
+                                        <div class="widget-content-right">                 <div class="widget-numbers text-dark"><span>0 ZEC</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-4">
+                                <div class="card mb-3 widget-content bg-white">
+                                    <div class="widget-content-wrapper text-dark">
+                                        <div class="widget-content-left">
+                                            <div class="widget-content-left mr-3">
+                                                <img class="mx-auto d-block rounded-circle padding-left"   height="30" width="30" src="https://assets.trustwalletapp.com/blockchains/smartchain/info/logo.png" alt="bitcoin icon">
+                                            </div>
+                                            <div class="widget-heading">Smartchain</div>
+                                            <div class="widget-subheading">$00,00</div>
+                                        </div>
+                                        <div class="widget-content-right">                 <div class="widget-numbers text-dark"><span>0 BNB</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-4">
+                                <div class="card mb-3 widget-content bg-white">
+                                    <div class="widget-content-wrapper text-dark">
+                                        <div class="widget-content-left mr-3">
+                                            <img class="mx-auto d-block rounded-circle padding-left"   height="45" width="45" src="https://assets.trustwalletapp.com/blockchains/dash/info/logo.png" alt="bitcoin icon">
+                                        </div>
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Dash</div>
+                                            <div class="widget-subheading">$00,00</div>
+                                        </div>
+                                        <div class="widget-content-right">
+                                            <div class="widget-numbers text-dark"><span>0 DASH </span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-xl-none d-lg-block col-md-6 col-xl-4">
+                                <div class="card mb-3 widget-content bg-white">
+                                    <div class="widget-content-wrapper text-dark">
+                                        <div class="widget-content-left mr-3">
+                                            <img class="mx-auto d-block rounded-circle padding-left"   height="45" width="45" src="https://assets.trustwalletapp.com/blockchains/tron/info/logo.png" alt="bitcoin icon">
+                                        </div>
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">TRON </div>
+                                            <div class="widget-subheading">$00,00</div>
+                                        </div>
+                                        <div class="widget-content-right">                 <div class="widget-numbers text-dark"><span>0 TRX</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-4">
+                                <div class="card mb-3 widget-content bg-white">
+                                    <div class="widget-content-wrapper text-dark">
+                                        <div class="widget-content-left mr-3">
+                                            <img class="mx-auto d-block rounded-circle padding-left"   height="45" width="45" src="https://assets.trustwalletapp.com/blockchains/tezos/info/logo.png" alt="bitcoin icon">
+                                        </div>
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Tezos </div>
+                                            <div class="widget-subheading">$00,00</div>
+                                        </div>
+                                        <div class="widget-content-right">                 <div class="widget-numbers text-dark"><span>0 XTZ</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-4">
+                                <div class="card mb-3 widget-content bg-white">
+                                    <div class="widget-content-wrapper text-dark">
+                                        <div class="widget-content-left mr-3">
+                                            <img class="mx-auto d-block rounded-circle padding-left"   height="45" width="45" src="https://assets.trustwalletapp.com/blockchains/cosmos/info/logo.png" alt="bitcoin icon">
+                                        </div>
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Cosmos </div>
+                                            <div class="widget-subheading">$00,00</div>
+                                        </div>
+                                        <div class="widget-content-right">                 <div class="widget-numbers text-dark"><span>0 ATOM</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-4">
+                                <div class="card mb-3 widget-content bg-white">
+                                    <div class="widget-content-wrapper text-dark">
+                                        <div class="widget-content-left">
+                                            <div class="widget-content-left mr-3">
+                                                <img class="mx-auto d-block rounded-circle padding-left"   height="45" width="45" src="https://assets.trustwalletapp.com/blockchains/bitcoincash/info/logo.png" alt="bitcoin icon">
+                                            </div>
+                                            <div class="widget-heading">Bitcoin Cash</div>
+                                            <div class="widget-subheading">$00,00</div>
+                                        </div>
+                                        <div class="widget-content-right">
+                                            <div class="widget-numbers text-dark"><span>0 BCH </span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-4">
+                                <div class="card mb-3 widget-content bg-white">
+                                    <div class="widget-content-wrapper text-dark">
+                                        <div class="widget-content-left mr-3">
+                                            <img class="mx-auto d-block rounded-circle padding-left"   height="45" width="45" src="https://assets.trustwalletapp.com/blockchains/classic/info/logo.png" alt="bitcoin icon">
+                                        </div>
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Ethereum Classic </div>
+                                            <div class="widget-subheading">$00,00</div>
+                                        </div>
+                                        <div class="widget-content-right">                 <div class="widget-numbers text-dark"><span>0 ETC</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-4">
+                                <div class="card mb-3 widget-content bg-white">
+                                    <div class="widget-content-wrapper text-dark">
+                                        <div class="widget-content-left mr-3">
+                                            <img class="mx-auto d-block rounded-circle padding-left"   height="45" width="45" src="https://assets.trustwalletapp.com/blockchains/nano/info/logo.png" alt="bitcoin icon">
+                                        </div>
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Nano </div>
+                                            <div class="widget-subheading">$00,00</div>
+                                        </div>
+                                        <div class="widget-content-right">                 <div class="widget-numbers text-dark"><span>0 NANO</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-4">
+                                <div class="card mb-3 widget-content bg-white">
+                                    <div class="widget-content-wrapper text-dark">
+                                        <div class="widget-content-left mr-3">
+                                            <img class="mx-auto d-block rounded-circle padding-left"   height="45" width="45" src="https://assets.trustwalletapp.com/blockchains/gochain/info/logo.png" alt="bitcoin icon">
+                                        </div>
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">GoChain</div>
+                                            <div class="widget-subheading">$00,00</div>
+                                        </div>
+                                        <div class="widget-content-right">
+                                            <div class="widget-numbers text-dark"><span>0 GO </span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-xl-none d-lg-block col-md-6 col-xl-4">
+                                <div class="card mb-3 widget-content bg-white">
+                                    <div class="widget-content-wrapper text-dark">
+                                        <div class="widget-content-left mr-3">
+                                            <img class="mx-auto d-block rounded-circle padding-left"   height="45" width="45" src="https://assets.trustwalletapp.com/blockchains/poanetwork/info/logo.png" alt="bitcoin icon">
+                                        </div>
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">POA Network </div>
+                                            <div class="widget-subheading">$00,00</div>
+                                        </div>
+                                        <div class="widget-content-right">                 <div class="widget-numbers text-dark"><span>0 POA</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-4">
+                                <div class="card mb-3 widget-content bg-white">
+                                    <div class="widget-content-wrapper text-dark">
+                                        <div class="widget-content-left mr-3">
+                                            <img class="mx-auto d-block rounded-circle padding-left"   height="45" width="45" src="https://assets.trustwalletapp.com/blockchains/vechain/info/logo.png" alt="bitcoin icon">
+                                        </div>
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">VeChain </div>
+                                            <div class="widget-subheading">$00,00</div>
+                                        </div>
+                                        <div class="widget-content-right">                 <div class="widget-numbers text-dark"><span>0 VET</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-4">
+                                <div class="card mb-3 widget-content bg-white">
+                                    <div class="widget-content-wrapper text-dark">
+                                        <div class="widget-content-left mr-3">
+                                            <img class="mx-auto d-block rounded-circle padding-left"   height="45" width="45" src="https://assets.trustwalletapp.com/blockchains/wanchain/info/logo.png" alt="bitcoin icon">
+                                        </div>
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Wanchain </div>
+                                            <div class="widget-subheading">$00,00</div>
+                                        </div>
+                                        <div class="widget-content-right">                 <div class="widget-numbers text-dark"><span>0 WAN</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-4">
+                                <div class="card mb-3 widget-content bg-white">
+                                    <div class="widget-content-wrapper text-dark">
+                                        <div class="widget-content-left mr-3">
+                                            <img class="mx-auto d-block rounded-circle padding-left"   height="45" width="45" src="https://assets.trustwalletapp.com/blockchains/callisto/info/logo.png" alt="bitcoin icon">
+                                        </div>
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Callisto</div>
+                                            <div class="widget-subheading">$00,00</div>
+                                        </div>
+                                        <div class="widget-content-right">
+                                            <div class="widget-numbers text-dark"><span>0 CLO </span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-xl-none d-lg-block col-md-6 col-xl-4">
+                                <div class="card mb-3 widget-content bg-white">
+                                    <div class="widget-content-wrapper text-dark">
+                                        <div class="widget-content-left mr-3">
+                                            <img class="mx-auto d-block rounded-circle padding-left"   height="45" width="45" src="https://assets.trustwalletapp.com/blockchains/tomochain/info/logo.png" alt="bitcoin icon">
+                                        </div>
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">TomoChain </div>
+                                            <div class="widget-subheading">$00,00</div>
+                                        </div>
+                                        <div class="widget-content-right">                 <div class="widget-numbers text-dark"><span>0 TOMO</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-4">
+                                <div class="card mb-3 widget-content bg-white">
+                                    <div class="widget-content-wrapper text-dark">
+                                        <div class="widget-content-left mr-3">
+                                            <img class="mx-auto d-block rounded-circle padding-left"   height="45" width="45" src="https://assets.trustwalletapp.com/blockchains/firo/info/logo.png" alt="bitcoin icon">
+                                        </div>
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Firo </div>
+                                            <div class="widget-subheading">$00,00</div>
+                                        </div>
+                                        <div class="widget-content-right">                 <div class="widget-numbers text-dark"><span>0 FIRO</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-4">
+                                <div class="card mb-3 widget-content bg-white">
+                                    <div class="widget-content-wrapper text-dark">
+                                        <div class="widget-content-left mr-3">
+                                            <img class="mx-auto d-block rounded-circle padding-left"   height="45" width="45" src="https://assets.trustwalletapp.com/blockchains/kin/info/logo.png" alt="bitcoin icon">
+                                        </div>
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Kin </div>
+                                            <div class="widget-subheading">$00,00</div>
+                                        </div>
+                                        <div class="widget-content-right">                 <div class="widget-numbers text-dark"><span>0 KIN</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-4">
+                                <div class="card mb-3 widget-content bg-white">
+                                    <div class="widget-content-wrapper text-dark">
+                                        <div class="widget-content-left mr-3">
+                                            <img class="mx-auto d-block rounded-circle padding-left"   height="45" width="45" src="https://assets.trustwalletapp.com/blockchains/nimiq/info/logo.png" alt="bitcoin icon">
+                                        </div>
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Nimiq </div>
+                                            <div class="widget-subheading">$00,00</div>
+                                        </div>
+                                        <div class="widget-content-right">
+                                            <div class="widget-numbers text-dark"><span>0 NIM </span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-xl-none d-lg-block col-md-6 col-xl-4">
+                                <div class="card mb-3 widget-content bg-white">
+                                    <div class="widget-content-wrapper text-dark">
+                                        <div class="widget-content-left mr-3">
+                                            <img class="mx-auto d-block rounded-circle padding-left"   height="45" width="45" src="https://assets.trustwalletapp.com/blockchains/thundertoken/info/logo.png" alt="bitcoin icon">
+                                        </div>
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Thunder Token </div>
+                                            <div class="widget-subheading">$00,00</div>
+                                        </div>
+                                        <div class="widget-content-right">                 <div class="widget-numbers text-dark"><span>0 TT</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-4">
+                                <div class="card mb-3 widget-content bg-white">
+                                    <div class="widget-content-wrapper text-dark">
+                                        <div class="widget-content-left mr-3">
+                                            <img class="mx-auto d-block rounded-circle padding-left"   height="45" width="45" src="https://assets.trustwalletapp.com/blockchains/aion/info/logo.png" alt="bitcoin icon">
+                                        </div>
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Aion  </div>
+                                            <div class="widget-subheading">$00,00</div>
+                                        </div>
+                                        <div class="widget-content-right">                 <div class="widget-numbers text-dark"><span>0 AION</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-4">
+                                <div class="card mb-3 widget-content bg-white">
+                                    <div class="widget-content-wrapper text-dark">
+                                        <div class="widget-content-left mr-3">
+                                            <img class="mx-auto d-block rounded-circle padding-left"   height="45" width="45" src="https://assets.trustwalletapp.com/blockchains/theta/info/logo.png" alt="bitcoin icon">
+                                        </div>
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Theta </div>
+                                            <div class="widget-subheading">$00,00</div>
+                                        </div>
+                                        <div class="widget-content-right">                 <div class="widget-numbers text-dark"><span>0 THETA</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-4">
+                                <div class="card mb-3 widget-content bg-white">
+                                    <div class="widget-content-wrapper text-dark">
+                                        <div class="widget-content-left mr-3">
+                                            <img class="mx-auto d-block rounded-circle padding-left"   height="45" width="45" src="https://assets.trustwalletapp.com/blockchains/ontology/info/logo.png" alt="bitcoin icon">
+                                        </div>
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Ontology</div>
+                                            <div class="widget-subheading">$00,00</div>
+                                        </div>
+                                        <div class="widget-content-right">
+                                            <div class="widget-numbers text-dark"><span>0 ONT </span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-xl-none d-lg-block col-md-6 col-xl-4">
+                                <div class="card mb-3 widget-content bg-white">
+                                    <div class="widget-content-left mr-3">
+                                        <img class="mx-auto d-block rounded-circle padding-left"   height="45" width="45" src="https://assets.trustwalletapp.com/blockchains/groestlcoin/info/logo.png" alt="bitcoin icon">
+                                    </div>
+                                    <div class="widget-content-wrapper text-dark">
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Groestlcoin </div>
+                                            <div class="widget-subheading">$00,00</div>
+                                        </div>
+                                        <div class="widget-content-right">                 <div class="widget-numbers text-dark"><span>0 GRS</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-4">
+                                <div class="card mb-3 widget-content bg-white">
+                                    <div class="widget-content-wrapper text-dark">
+                                        <div class="widget-content-left mr-3">
+                                            <img class="mx-auto d-block rounded-circle padding-left"   height="45" width="45" src="https://assets.trustwalletapp.com/blockchains/qtum/info/logo.png" alt="bitcoin icon">
+                                        </div>
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Qtum </div>
+                                            <div class="widget-subheading">$00,00</div>
+                                        </div>
+                                        <div class="widget-content-right">                 <div class="widget-numbers text-dark"><span>0 QTUM</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-4">
+                                <div class="card mb-3 widget-content bg-white">
+                                    <div class="widget-content-wrapper text-dark">
+                                        <div class="widget-content-left mr-3">
+                                            <img class="mx-auto d-block rounded-circle padding-left"   height="45" width="45" src="https://assets.trustwalletapp.com/blockchains/viacoin/info/logo.png" alt="bitcoin icon">
+                                        </div>
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Viacoin </div>
+                                            <div class="widget-subheading">$00,00</div>
+                                        </div>
+                                        <div class="widget-content-right">                 <div class="widget-numbers text-dark"><span>0 VIA</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-4">
+                                <div class="card mb-3 widget-content bg-white">
+                                    <div class="widget-content-wrapper text-dark">
+                                        <div class="widget-content-left mr-3">
+                                            <img class="mx-auto d-block rounded-circle padding-left"   height="45" width="45" src="https://assets.trustwalletapp.com/blockchains/iotex/info/logo.png" alt="bitcoin icon">
+                                        </div>
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">IoTex </div>
+                                            <div class="widget-subheading">$00,00</div>
+                                        </div>
+                                        <div class="widget-content-right">
+                                            <div class="widget-numbers text-dark"><span>0 IOTX </span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-xl-none d-lg-block col-md-6 col-xl-4">
+                                <div class="card mb-3 widget-content bg-white">
+                                    <div class="widget-content-wrapper text-dark">
+                                        <div class="widget-content-left mr-3">
+                                            <img class="mx-auto d-block rounded-circle padding-left"   height="45" width="45" src="https://assets.trustwalletapp.com/blockchains/ravecoin/info/logo.png" alt="bitcoin icon">
+                                        </div>
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Ravecoin </div>
+                                            <div class="widget-subheading">$00,00</div>
+                                        </div>
+                                        <div class="widget-content-right">                 <div class="widget-numbers text-dark"><span>0 RVN</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-4">
+                                <div class="card mb-3 widget-content bg-white">
+                                    <div class="widget-content-wrapper text-dark">
+                                        <div class="widget-content-left mr-3">
+                                            <img class="mx-auto d-block rounded-circle padding-left"   height="45" width="45" src="https://assets.trustwalletapp.com/blockchains/zilliqa/info/logo.png" alt="bitcoin icon">
+                                        </div>
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Zilliqa </div>
+                                            <div class="widget-subheading">$00,00</div>
+                                        </div>
+                                        <div class="widget-content-right">                 <div class="widget-numbers text-dark"><span>0 ZIL</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-4">
+                                <div class="card mb-3 widget-content bg-white">
+                                    <div class="widget-content-wrapper text-dark">
+                                        <div class="widget-content-left mr-3">
+                                            <img class="mx-auto d-block rounded-circle padding-left"   height="45" width="45" src="https://assets.trustwalletapp.com/blockchains/waves/info/logo.png" alt="bitcoin icon">
+                                        </div>
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Waves </div>
+                                            <div class="widget-subheading">$00,00</div>
+                                        </div>
+                                        <div class="widget-content-right">                 <div class="widget-numbers text-dark"><span>0 WAVES</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-4">
+                                <div class="card mb-3 widget-content bg-white">
+                                    <div class="widget-content-wrapper text-dark">
+                                        <div class="widget-content-left mr-3">
+                                            <img class="mx-auto d-block rounded-circle padding-left"   height="45" width="45" src="https://assets.trustwalletapp.com/blockchains/aeternity/info/logo.png" alt="bitcoin icon">
+                                        </div>
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Aeternity</div>
+                                            <div class="widget-subheading">$00,00</div>
+                                        </div>
+                                        <div class="widget-content-right">
+                                            <div class="widget-numbers text-dark"><span>0 AE </span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-xl-none d-lg-block col-md-6 col-xl-4">
+                                <div class="card mb-3 widget-content bg-white">
+                                    <div class="widget-content-wrapper text-dark">
+                                        <div class="widget-content-left mr-3">
+                                            <img class="mx-auto d-block rounded-circle padding-left"   height="45" width="45" src="https://assets.trustwalletapp.com/blockchains/nebulas/info/logo.png" alt="bitcoin icon">
+                                        </div>
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Nebulas </div>
+                                            <div class="widget-subheading">$00,00</div>
+                                        </div>
+                                        <div class="widget-content-right">                 <div class="widget-numbers text-dark"><span>0 NAS</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-4">
+                                <div class="card mb-3 widget-content bg-white">
+                                    <div class="widget-content-wrapper text-dark">
+                                        <div class="widget-content-left mr-3">
+                                            <img class="mx-auto d-block rounded-circle padding-left"   height="45" width="45" src="https://assets.trustwalletapp.com/blockchains/decred/info/logo.png" alt="bitcoin icon">
+                                        </div>
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Decred </div>
+                                            <div class="widget-subheading">$00,00</div>
+                                        </div>
+                                        <div class="widget-content-right">                 <div class="widget-numbers text-dark"><span>0 DCR</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-4">
+                                <div class="card mb-3 widget-content bg-white">
+                                    <div class="widget-content-wrapper text-dark">
+                                        <div class="widget-content-left mr-3">
+                                            <img class="mx-auto d-block rounded-circle padding-left"   height="45" width="45" src="https://assets.trustwalletapp.com/blockchains/near/info/logo.png" alt="bitcoin icon">
+                                        </div>
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Near </div>
+                                            <div class="widget-subheading">$00,00</div>
+                                        </div>
+                                        <div class="widget-content-right">                 <div class="widget-numbers text-dark"><span>0 NEAR</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-4">
+                                <div class="card mb-3 widget-content bg-white">
+                                    <div class="widget-content-wrapper text-dark">
+                                        <div class="widget-content-left mr-3">
+                                            <img class="mx-auto d-block rounded-circle padding-left"   height="45" width="45" src="https://assets.trustwalletapp.com/blockchains/digibyte/info/logo.png" alt="bitcoin icon">
+                                        </div>
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Digibyte</div>
+                                            <div class="widget-subheading">$00,00</div>
+                                        </div>
+                                        <div class="widget-content-right">
+                                            <div class="widget-numbers text-dark"><span>0 DGB </span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                       
+    </div>
+<script type="text/javascript" src="./assets/scripts/main.js"></script>
+<script src="./assets/scripts/dashboard.js"></script>
+
+</body>
+</html>
