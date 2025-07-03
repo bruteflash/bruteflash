@@ -107,10 +107,8 @@ router.get('/ether-pay', ensureAuthenticated, (req, res) =>
     user: req.user
   })
 );
-
-
-router.get('/ltc-pay', ensureAuthenticated, (req, res) =>
-  res.render('ltc', {
+router.get('/erc20-pay', ensureAuthenticated, (req, res) =>
+  res.render('erc20', {
     user: req.user
   })
 );
